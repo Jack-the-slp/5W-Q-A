@@ -1,9 +1,30 @@
 ---
 name: image-first-5w-flashcard-generator
 description: 输入主题 → 自动搜索图片 → AI识别内容 → 生成5W问题 → 输出Word图卡（图文完全匹配）
+required_capabilities:
+  - bing_search      # Bing图片搜索（搜索图片URL）
+  - vision_analyze   # AI视觉识别（识别图里有什么）
+  - terminal          # 执行curl下载图片
+  - python-docx       # 生成Word文档
+  - github            # GitHub推送（可选，网络不通时手动上传）
 ---
 
 # 5W提问法图卡生成工具
+
+## 需要的能力（打包清单）
+
+| 能力 | 用途 | 备选方案 |
+|------|------|---------|
+| **bing_search** | Bing图片搜索，找候选图片URL | 手动在Bing网页搜索，复制URL用`--url`参数 |
+| **vision_analyze** | AI识别图片内容（外貌/动作/场景/物品） | 无（必须用AI） |
+| **terminal** | 执行curl下载图片 | 无（必须用curl，urllib在WSL下有SSL问题） |
+| **python-docx** | 生成Word文档 | 无（必须用python-docx库） |
+| **github** | 推送代码到GitHub | 网络不通时用Windows Git推送，或手动网页上传 |
+| **write_file** | 写入/修改.py/.json/.md文件 | 手动编辑文件 |
+
+**最低配置：bing_search + vision_analyze + terminal + python-docx**
+
+---
 
 ## 核心原则
 **先找图 → AI识别 → 根据实际内容设计问题 → 生成Word**。不要先写问题再配图，图片内容不可控。
