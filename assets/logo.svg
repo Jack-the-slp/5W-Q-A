@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 小螺号logo - 螺旋贝壳+号角造型 -->
+  <!-- 螺旋贝壳主体 -->
+  <circle cx="100" cy="110" r="65" fill="#F97316" opacity="0.15"/>
+  <path d="M100 45 C55 45, 20 80, 20 120 C20 155, 55 180, 100 180 C145 180, 180 155, 180 120 C180 85, 145 55, 100 55 C85 55, 72 62, 62 73 C55 81, 52 92, 56 104 C60 116, 72 126, 88 130 C104 134, 122 126, 132 112 C138 104, 140 94, 136 85 C132 76, 122 70, 112 72"
+        fill="none" stroke="#F97316" stroke-width="8" stroke-linecap="round"/>
+  <!-- 号角 -->
+  <path d="M158 72 C175 62, 188 55, 190 50 C192 58, 185 68, 175 76 C165 84, 155 88, 150 90"
+        fill="none" stroke="#F97316" stroke-width="7" stroke-linecap="round"/>
+  <!-- 号嘴装饰 -->
+  <circle cx="158" cy="72" r="5" fill="#F97316"/>
+  <!-- 中心点 -->
+  <circle cx="100" cy="120" r="8" fill="#F97316"/>
+  <!-- 波浪线（声波） -->
+  <path d="M190 48 C196 44, 196 54, 190 50" fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+  <path d="M195 42 C204 36, 204 50, 195 44" fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+  <path d="M200 36 C212 28, 212 46, 200 38" fill="none" stroke="#F97316" stroke-width="3" stroke-linecap="round"/>
+  <!-- 底部文字 -->
+  <text x="100" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#F97316">小螺号</text>
+</svg>
